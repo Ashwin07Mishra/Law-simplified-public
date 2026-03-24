@@ -145,7 +145,7 @@ def call_llm_api_fast(prompt, max_tokens=512, llm_api_url=DEFAULT_LLM_API_URL):
     headers = {"Content-Type": "application/json", "Accept": "application/json"}
     
     try:
-        response = requests.post(llm_api_url, headers=headers, json=request_body, timeout=40)
+        response = requests.post(llm_api_url, headers=headers, json=request_body, timeout=60)
         response.raise_for_status()
         result = response.json()
         
