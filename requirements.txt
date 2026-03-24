@@ -1,0 +1,13 @@
+streamlit
+pdf2image
+pytesseract
+easyocr
+Pillow
+numpy
+requests
+
+# Force CPU-only versions of torch and torchvision.
+torch==2.8.0+cpu
+torchvision==0.23.0+cpu
+-f https://download.pytorch.org/whl/cpu
+
